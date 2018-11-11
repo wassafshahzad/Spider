@@ -3,13 +3,12 @@ from queue import Queue
 import threading
 from spider import Spider
 from parsing import *
-import datetime
 #Project_name='Anime'
  
 
 def append_file(data,name):
         try:
-                f=open(name+".txt",'a')
+                f=open(name+'.txt','a')
                 for l in data:
                     f.write(l+'\n\n')
                 f.close()
@@ -32,7 +31,7 @@ def work():
 
 
 def crawl_t():
-    if (len(Spider.craw)<10):
+    if (len(Spider.que)>0):
         #print(len(Spider.que))
         for lnks in Spider.que:
             queue.put(lnks)
