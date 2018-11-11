@@ -5,6 +5,7 @@ Clone the repo and cd to the project.Run python main.py or main_all.py than ente
 main.py coolects about 10 links 
 #Use main_all
 Main_all collects all links 
-#Usage 
+# Usage 
 This spider can be used to create a site map of a site and save links in a text file
-
+# Screen Shots
+screen shots are provided in the repo 
